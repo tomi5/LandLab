@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+
+RewriteRule ^(.+)$ index.php?page=$1 [QSA]
+
+rewritecond %{http_host} ^www.landlab.pl [nc] 
+rewriterule ^(.*)$ https://landlab.pl/$1 [r=301,nc,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]

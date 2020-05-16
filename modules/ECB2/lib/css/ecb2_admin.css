@@ -1,0 +1,8 @@
+/* ecb2_admin.css - v1.0 - 18Apr17
+
+   - v1.0 - 18Apr17 - initial css file
+
+***************************************************************************************************/
+
+.sortable-ecb2-list tr {cursor:move;}
+#loader {padding-left:50px;}
