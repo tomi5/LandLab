@@ -1,4 +1,4 @@
-# LandLab - commercial website for landscape architekture company
+# LandLab - commercial website for landscape architecture company
 
 ## https://landlab.pl/
 
